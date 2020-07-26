@@ -29,13 +29,17 @@ running.
 2. After above edit bot_data.json
 ```shell
 {
-  "resume_channel": "736822249491005502",
-  "DOG_API_KEY": "<PUT API KEY HERE>",
-  "CAT_API_KEY": "<PUT API KEY HERE>",
-  "image-channel": "<SPECIFY CHANNEL ID FOR RANDOM CAT/DOG IMAGES>",
-  "job_channel": "<JOB_CHANNEL_ID_HERE>",
-  "job_board": "<JOB_BOARD_ID_HERE>",
+  "prefix": ".",
+  "resume_channel": "<channel id>",
+  "token": "",
+  "DOG_API_KEY": "NzMyNDM3Mjg3MjcwNjEzMTIy.Xw0lYQ.BIbyP_0IWXuUtmd1jSInyqlO5T4",
+  "CAT_API_KEY": "7bd3f747-6193-41bc-97d6-2643494791bd",
+  "image_channel": "images",
+  "job_channel": "<channel id>",
+  "job_board": "<channel id>",
+  "leetcode_channel": "<channel id>"
 }
+
 
 commands here
 ```
