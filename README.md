@@ -13,13 +13,18 @@ running.
 
 0. Run yarn install to install dependencies.
 ### Create a bot on discord.com/developers and generate token.
-1. Create config.json in main directory.
+1. Create config.json in main directory and edit the contents as below.
 ```shell
 {
-"prefix": "<prefix here>"
-"token":"<YOUR-TOKEN-HERE>"
+  "prefix": ".",
+  "resume_channel": "736822249491005502",
+  "DOG_API_KEY": "NzMyNDM3Mjg3MjcwNjEzMTIy.Xw0lYQ.BIbyP_0IWXuUtmd1jSInyqlO5T4",
+  "CAT_API_KEY": "7bd3f747-6193-41bc-97d6-2643494791bd",
+  "image-channel": "images",
+  "job_channel": "736980807788265655",
+  "job_board": "736980807788265655"
 }
-commands here
+
 ```
 2. After above edit bot_data.json
 ```shell
