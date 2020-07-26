@@ -18,11 +18,13 @@ running.
 {
   "prefix": ".",
   "resume_channel": "736822249491005502",
+  "token": "NzMyNDM3Mjg3MjcwNjEzMTIy.Xw0lYQ.v8Js3OqgQDDL8OW0bdUaj9kZ4Ew",
   "DOG_API_KEY": "NzMyNDM3Mjg3MjcwNjEzMTIy.Xw0lYQ.BIbyP_0IWXuUtmd1jSInyqlO5T4",
   "CAT_API_KEY": "7bd3f747-6193-41bc-97d6-2643494791bd",
-  "image-channel": "images",
+  "image_channel": "images",
   "job_channel": "736980807788265655",
-  "job_board": "736980807788265655"
+  "job_board": "736980807788265655",
+  "leetcode_channel": "737025972725088296"
 }
 
 ```
@@ -34,6 +36,7 @@ running.
   "CAT_API_KEY": "<PUT API KEY HERE>",
   "image-channel": "<SPECIFY CHANNEL ID FOR RANDOM CAT/DOG IMAGES>",
   "job_channel": "<JOB_CHANNEL_ID_HERE>",
+  "leetcode_channel": "<LEETCODE_CHANNEL_ID_HERE>",
   "job_board": "<JOB_BOARD_ID_HERE>",
 }
 
