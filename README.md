@@ -32,7 +32,8 @@ running.
   "resume_channel": "736822249491005502",
   "DOG_API_KEY": "<PUT API KEY HERE>",
   "CAT_API_KEY": "<PUT API KEY HERE>",
-  "image-channel": "<SPECIFY CHANNEL ID FOR RANDOM CAT/DOG IMAGES>",
+  "image_channel": "<SPECIFY CHANNEL ID FOR RANDOM CAT/DOG IMAGES>",
+  "leetcode_channel": "<LEETCODE_CHANNEL_ID_HERE>",
   "job_channel": "<JOB_CHANNEL_ID_HERE>",
   "job_board": "<JOB_BOARD_ID_HERE>",
 }
