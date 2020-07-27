@@ -1,5 +1,5 @@
 let leetcode = require("./../data.json");
-const { leetcode_channel } = require("./../bot_data.json");
+const { leetcode_channel } = require("./../config.json");
 const Discord = require("discord.js");
 
 module.exports = {
@@ -8,16 +8,16 @@ module.exports = {
   args: "true",
   execute(message, args) {
     let leetcodeChannel = message.guild.channels.cache.get(leetcode_channel);
+    if (!leetcodeChannel) {
+      message.channel.send(
+        `Sorry, it seems there is no leetcode_channel on this server ${message.author}, Go ahead and create one in config.json`
+      );
+      return;
+    }
     if (message.channel.name != leetcodeChannel.name) {
       message.delete();
       message.channel.send(
         `Please use the leetcode channel ${message.author}.`
-      );
-      return;
-    }
-    if (!leetcodeChannel) {
-      message.channel.send(
-        `Sorry, it seems there is no leetcode_channel on this server ${message.author}, Go ahead and create one.`
       );
       return;
     }

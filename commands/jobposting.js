@@ -1,4 +1,4 @@
-const { job_channel, job_board } = require("./../bot_data.json");
+const { job_channel, job_board } = require("./../config.json");
 const Discord = require("discord.js");
 
 module.exports = {
@@ -6,11 +6,16 @@ module.exports = {
   description: "Job posting",
   args: true,
   execute(message, args) {
-    message.delete();
-    if (message.channel.name != job_channel) {
-      message.send("Please post job description in intended channel");
+    if (message.channel.id != job_channel) return;
+    let jobBoard = message.guild.channels.cache.get(job_board);
+    if (!jobBoard) {
+      message.channel.send(
+        `Sorry, it seems there is no job_board on this server ${message.author}, Go ahead and create one.`
+      );
       return;
     }
+    message.delete();
+
     let company, title, level, description;
     let url = args[0].split(/ +/)[1];
 

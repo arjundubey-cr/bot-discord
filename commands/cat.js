@@ -1,8 +1,9 @@
+require("dotenv").config();
 const querystring = require("querystring");
 const r2 = require("r2");
 
 const CAT_API_URL = "https://api.thecatapi.com/";
-const { CAT_API_KEY, image_channel } = require("./../bot_data.json");
+const { CAT_API_KEY, image_channel } = require("../config.json");
 
 module.exports = {
   name: "cat",

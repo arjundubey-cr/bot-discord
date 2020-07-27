@@ -2,7 +2,7 @@ const querystring = require("querystring");
 const r2 = require("r2");
 
 const DOG_API_URL = "https://api.thedogapi.com/";
-const { DOG_API_KEY, image_channel } = require("./../bot_data.json");
+const { DOG_API_KEY, image_channel } = require("../config.json");
 
 module.exports = {
   name: "dog",

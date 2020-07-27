@@ -1,4 +1,4 @@
-const { resume_channel } = require("./../bot_data.json");
+const { resume_channel } = require("../config.json");
 const Discord = require("discord.js");
 
 module.exports = {
