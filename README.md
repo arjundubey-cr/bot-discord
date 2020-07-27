@@ -27,7 +27,7 @@ running.
   "leetcode_channel":"<leetcode_questions_channel id here>"
 }
 
-```shell
+```
 node bot.js
 
 ## Developing
