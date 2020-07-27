@@ -19,32 +19,16 @@ running.
   "prefix": ".",
   "token":"Enter bot token here"
   "resume_channel": "736822249491005502",
-  "DOG_API_KEY": "NzMyNDM3Mjg3MjcwNjEzMTIy.Xw0lYQ.BIbyP_0IWXuUtmd1jSInyqlO5T4",
-  "CAT_API_KEY": "7bd3f747-6193-41bc-97d6-2643494791bd",
+  "DOG_API_KEY": "<api key>",
+  "CAT_API_KEY": "<api key here>",
   "image-channel": "images",
-  "job_channel": "736980807788265655",
-  "job_board": "736980807788265655"
+  "job_channel": "<job channel id/name here>",
+  "job_board": "<jobBoarding channel id/name here>"
+  "leetcode_channel":"<leetcode_questions_channel id here>"
 }
 
-```
-2. After above edit bot_data.json
 ```shell
-{
-  "prefix": ".",
-  "resume_channel": "<channel id>",
-  "token": "",
-  "DOG_API_KEY": "NzMyNDM3Mjg3MjcwNjEzMTIy.Xw0lYQ.BIbyP_0IWXuUtmd1jSInyqlO5T4",
-  "CAT_API_KEY": "7bd3f747-6193-41bc-97d6-2643494791bd",
-  "image_channel": "images",
-  "job_channel": "<channel id>",
-  "job_board": "<channel id>",
-  "leetcode_channel": "<channel id>"
-}
-
-
-commands here
-```
-
+node bot.js
 
 ## Developing
 
