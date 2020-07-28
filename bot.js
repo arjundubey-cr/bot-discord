@@ -1,6 +1,6 @@
+require("dotenv").config();
 //file-system module of node.js
 const fs = require("fs");
-
 const Discord = require("discord.js");
 
 //importing prefix and token file
@@ -69,4 +69,4 @@ bot.on("message", (message) => {
 //   await try
 // })();
 
-bot.login(token);
+bot.login(process.env.TOKEN);

@@ -3,11 +3,15 @@
   "version": "1.0.0",
   "description": "A discord bot",
   "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
   "repository": "git@github.com:arjundubey-cr/discord-bot.git",
   "author": "Arjun Dubey <arjundubeycr@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "discord.js": "^12.2.0",
+    "dotenv": "^8.2.0",
     "r2": "^2.0.1"
   }
 }
