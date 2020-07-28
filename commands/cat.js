@@ -4,7 +4,7 @@ const r2 = require("r2");
 
 const CAT_API_URL = "https://api.thecatapi.com/";
 const CAT_API_KEY = process.env.CAT_API_KEY;
-const image_channel = process.env.image_channel;
+const image_channel = process.env.IMAGES_CHANNEL;
 module.exports = {
   name: "cat",
   description: "Get a random cat image",
@@ -15,6 +15,7 @@ module.exports = {
       message.channel.send("Can't post images in this channel");
       return;
     }
+    message.react("🐈");
     var imagesCat = await loadImageCat(message.author.username);
     var imageCat = imagesCat[0];
     await message.channel.send("", { files: [imageCat.url] });

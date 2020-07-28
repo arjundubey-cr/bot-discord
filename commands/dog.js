@@ -3,7 +3,7 @@ const r2 = require("r2");
 
 const DOG_API_URL = "https://api.thedogapi.com/";
 const DOG_API_KEY = process.env.DOG_API_KEY;
-const image_channel = process.env.images_channel;
+const image_channel = process.env.IMAGES_CHANNEL;
 module.exports = {
   name: "dog",
   description: "Get a random dog image",
@@ -14,6 +14,7 @@ module.exports = {
       message.channel.send("Can't post images in this channel");
       return;
     }
+    message.react("🐕");
     var imagesDog = await loadImageDog(message.author.username);
     var imageDog = imagesDog[0];
     await message.channel.send("", { files: [imageDog.url] });
