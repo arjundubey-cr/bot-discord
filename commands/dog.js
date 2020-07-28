@@ -1,6 +1,6 @@
 const querystring = require("querystring");
 const r2 = require("r2");
-
+require("dotenv").config();
 const DOG_API_URL = "https://api.thedogapi.com/";
 const DOG_API_KEY = process.env.DOG_API_KEY;
 const image_channel = process.env.IMAGES_CHANNEL;
