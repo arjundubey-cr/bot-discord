@@ -2,8 +2,8 @@ const querystring = require("querystring");
 const r2 = require("r2");
 
 const DOG_API_URL = "https://api.thedogapi.com/";
-const { DOG_API_KEY, image_channel } = require("../config.json");
-
+const DOG_API_KEY = process.env.DOG_API_KEY;
+const image_channel = process.env.images_channel;
 module.exports = {
   name: "dog",
   description: "Get a random dog image",

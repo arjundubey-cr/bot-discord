@@ -1,5 +1,6 @@
-const { job_channel, job_board } = require("./../config.json");
 const Discord = require("discord.js");
+const job_board = process.env.JOB_BOARDING;
+const job_channel = process.env.JOB_CHANNEL;
 
 module.exports = {
   name: "job",

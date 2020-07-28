@@ -1,6 +1,5 @@
-const { resume_channel } = require("../config.json");
 const Discord = require("discord.js");
-
+const resume_channel = process.env.RESUME_CHANNEL;
 module.exports = {
   name: "rsml",
   description: "Gathers Resume",

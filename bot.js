@@ -3,9 +3,6 @@ require("dotenv").config();
 const fs = require("fs");
 const Discord = require("discord.js");
 
-//importing prefix and token file
-const { prefix, token } = require("./config.json");
-
 const bot = new Discord.Client();
 bot.commands = new Discord.Collection();
 
@@ -26,14 +23,18 @@ bot.once("ready", () => {
 
 bot.on("message", (message) => {
   //checks if the message is intended for bot or not
-  if (!message.content.startsWith(prefix) || message.author.bot) return;
+  if (!message.content.startsWith(process.env.PREFIX) || message.author.bot)
+    return;
 
   //seperates the arguments and the command from message
   const mess = message;
-  let args = message.content.slice(prefix.length).trim().split(/ +/);
+  let args = message.content
+    .slice(process.env.PREFIX.length)
+    .trim()
+    .split(/ +/);
   const commandName = args.shift().toLowerCase();
   if (commandName == "job") {
-    args = mess.content.slice(prefix.length).trim().split("|");
+    args = mess.content.slice(process.env.PREFIX.length).trim().split("|");
   }
 
   //Checks if a particular command exist or not

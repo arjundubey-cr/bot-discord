@@ -1,7 +1,6 @@
 let leetcode = require("./../data.json");
-const { leetcode_channel } = require("./../config.json");
 const Discord = require("discord.js");
-
+const leetcode_channel = process.env.LEETCODE_CHANNEL;
 module.exports = {
   name: "leetcode",
   description: "Sends a random Leetcode question",
