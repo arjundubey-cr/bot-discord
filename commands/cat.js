@@ -10,11 +10,7 @@ module.exports = {
   description: "Get a random cat image",
   args: false,
   async execute(message, args) {
-    if (message.channel.name != image_channel) {
-      message.react("💔");
-      message.channel.send("Can't post images in this channel");
-      return;
-    }
+    
     message.react("🐈");
     var imagesCat = await loadImageCat(message.author.username);
     var imageCat = imagesCat[0];
