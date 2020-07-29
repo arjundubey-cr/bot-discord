@@ -9,11 +9,6 @@ module.exports = {
   description: "Get a random dog image",
   args: false,
   async execute(message, args) {
-    if (message.channel.name != image_channel) {
-      message.react("💔");
-      message.channel.send("Can't post images in this channel");
-      return;
-    }
     message.react("🐕");
     var imagesDog = await loadImageDog(message.author.username);
     var imageDog = imagesDog[0];
