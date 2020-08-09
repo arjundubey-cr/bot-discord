@@ -4,7 +4,7 @@
 
 > Created for Intern Grind Discord Server
 
-This project creates a discord bot which moves resume files from a channel where users can post their resumes and comment on others to a channel containing only the resume PDFs in order to simplify finding resumes in the server. The project also sorts job postings from one chat channel into another channel to make the postings easier to view. Apart from this it alson has some additional functionalities, checkout {prefix}help for more
+This project is a discord bot which moves resume files from a channel where users can post their resumes and comment on others to a channel containing only the resume PDFs in order to simplify finding resumes in the server. The project also sorts job postings from one chat channel into another channel to make the postings easier to view. Apart from this it alson has some additional functionalities, checkout {prefix}help for more
 
 ## Installing / Getting started
 
